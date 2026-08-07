@@ -40,14 +40,14 @@ All commands below assume your working directory is the repository root
 4. Outputs (figures and tables) will be written to `figures/`.
 
 ## Data
-File: data/synthetic_data.csv
+File: data/data.dta
 
 ## Correspondence between code and paper
 | Paper element | Script | Output |
 |---|---|---|
-| Table 1 | `02_analysis.R` | `output/tables/table1.csv` |
-| Table 2 | `02_analysis.R` | `output/tables/table2.csv` |
-| Figure 1 | `03_figures.R` | `output/figures/figure1.png` |
+| Figure 1 | `01_Reg_ITT.do` | `output/tables/table1.csv` |
+| Table 2 | `02_Reg_PSM` | `output/tables/table2.csv` |
+| Figure 1 | `03_Reg_IV.do` | `output/figures/figure1.png` |
 
 ## License
 Code is released under the MIT License.
