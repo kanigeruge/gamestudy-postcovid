@@ -1,0 +1,18 @@
+		(1)	(2)
+VARIABLES	LABELS	k6	happiness
+			
+win	win	.00286	.114
+		(.16)	(.141)
+			
+Observations		6,911	6,911
+R-squared		.0131	.0102
+Mean		7.149	17.258
+SD		6.638	6.545
+Coef		.002858	.113882
+SE		.160432	.141319
+Standardized Coef		.0004	.0174
+Standardized SE		.0242	.0216
+P-value		.9858659999999999	.424475
+Stars		empty	empty
+Low		-.048242	-.026016
+Hi		.049042	.060816
