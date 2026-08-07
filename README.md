@@ -22,7 +22,7 @@ This repository contains the code and a synthetic dataset used to reproduce the 
 ```
 
 ## Requirements
-- [Stata X.X.X] (development and testing environment — the code has been verified to run in this version; earlier or later versions may also work but have not been tested)
+- Stata 16.1 (development and testing environment — the code has been verified to run in this version; earlier or later versions may also work but have not been tested)
 - Required packages:
 
 ## How to run
