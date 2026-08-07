@@ -42,7 +42,7 @@ All commands below assume your working directory is the repository root
    do "code/02_Reg_PSM.do"
    do "code/03_Reg_IV.do"
 ```
-4. Outputs (figures and tables) will be written to `figures/`.
+5. Outputs (figures and tables) will be written to `figures/`.
 
 ## Data
 File: data/data.dta
