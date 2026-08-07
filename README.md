@@ -51,7 +51,7 @@ File: data/data.dta
 | Paper element | Script | Output |
 |---|---|---|
 | Figure 1 | `01_Reg_ITT.do` | `figures/table1.csv` |
-| Figure 2 | `02_Reg_PSM` | `figures/table2.csv` |
+| Figure 1 | `02_Reg_PSM` | `figures/table2.csv` |
 | Figure 2 | `03_Reg_IV.do` | `figures/figure1.png` |
 
 ## License
