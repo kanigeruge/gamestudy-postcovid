@@ -31,7 +31,12 @@ All commands below assume your working directory is the repository root
 
 1. Clone this repository.
 2. Install the required packages listed above.
-3. Run the scripts in `code/` in numbered order:
+3. before running any `.do` file, open each code and set the `work` global at the top to the full path of this repository on your machine:
+```stata
+   global work "C:/path/to/this/repository"
+```
+   All file paths in the `.do` files are written relative to `$work` (e.g., `use "$work/data/data.dta"`), so this is the only line that needs to be edited before running the scripts.
+4. Run the scripts in `code/` in numbered order:
 ```
    Stata code/01_Reg_ITT.do
    Stata code/02_Reg_PSM.do
