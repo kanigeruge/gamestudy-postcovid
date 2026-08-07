@@ -23,7 +23,12 @@ This repository contains the code and a synthetic dataset used to reproduce the 
 
 ## Requirements
 - Stata 16.1 (development and testing environment — the code has been verified to run in this version; earlier or later versions may also work but have not been tested)
-- Required packages:
+- the `.do` files require the following user-written packages. Install them once before running the scripts:
+```stata
+  ssc install reghdfe
+  ssc install ftools   // dependency of reghdfe
+  ssc install outreg2
+```
 
 ## How to run
 All commands below assume your working directory is the repository root
