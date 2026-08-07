@@ -1,6 +1,6 @@
 # Causal effect of video gaming on mental well-being in Post-COVID Japan
 Replication code and synthetic data for:
-Egami, H. et al. (2026). Causal effect of video gaming on mental well-being in Post-COVID Japan. [Journal name]. [DOI or link, if available]
+Egami, H. et al. (2026). Causal effect of video gaming on mental well-being in Post-COVID Japan. [Journal name]. [DOI or link]
 
 ## Overview
 This repository contains the code and a synthetic dataset used to reproduce the main analyses in the paper. The synthetic dataset was generated using the SDV (Synthetic Data Vault) Python library and approximates the structure and variable relationships of the original dataset, but does not contain any real observations and cannot be used to recover information about actual survey respondents.
@@ -50,7 +50,7 @@ File: data/data.dta
 ## Correspondence between code and paper
 | Paper element | Script | Output |
 |---|---|---|
-| Figure 1 | `01_Reg_ITT.do` | `figures/table1.csv` |
+| Figure 1 | `01_Reg_ITT.do` | `figures/figure1_reg.xls` `figures/figure1_reg.txt`|
 | Figure 1 | `02_Reg_PSM` | `figures/table2.csv` |
 | Figure 2 | `03_Reg_IV.do` | `figures/figure1.png` |
 
