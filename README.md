@@ -45,9 +45,9 @@ File: data/data.dta
 ## Correspondence between code and paper
 | Paper element | Script | Output |
 |---|---|---|
-| Figure 1 | `01_Reg_ITT.do` | `output/tables/table1.csv` |
-| Table 2 | `02_Reg_PSM` | `output/tables/table2.csv` |
-| Figure 1 | `03_Reg_IV.do` | `output/figures/figure1.png` |
+| Figure 1 | `01_Reg_ITT.do` | `figures/table1.csv` |
+| Figure 2 | `02_Reg_PSM` | `figures/table2.csv` |
+| Figure 2 | `03_Reg_IV.do` | `figures/figure1.png` |
 
 ## License
 Code is released under the MIT License.
