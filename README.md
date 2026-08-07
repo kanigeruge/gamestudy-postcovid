@@ -36,6 +36,7 @@ All commands below assume your working directory is the repository root
    global work "C:/path/to/this/repository"
 ```
    All file paths in the `.do` files are written relative to `$work` (e.g., `use "$work/data/data.dta"`), so this is the only line that needs to be edited before running the scripts.
+
 4. Run the scripts in `code/` in numbered order:
 ```
    do "code/01_Reg_ITT.do"
