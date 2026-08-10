@@ -7,8 +7,7 @@ Egami, H. et al. (2026). Causal effect of video gaming on mental well-being in P
 .
 ├── code/
 │   ├── 01_Reg_ITT.do       # Main analysis (ITT estimation in Figure 1)
-│   ├── 02_Reg_PSM.do       # Main analysis (PSM estimation in Figure 1)
-│   └── 03_Reg_IV.do        # Main analysis (IV estimation in Figure 2) 
+│   └── 02_Reg_PSM.do       # Main analysis (PSM estimation in Figure 1)
 ├── data/
 │   └── data.dta            # Synthetic dataset (see Data section below)
 ├── figures/                # Generated figures and tables
