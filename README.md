@@ -40,7 +40,6 @@ All file paths in the `.do` files are written relative to `$work` (e.g., `use "$
 ```
    do "code/01_Reg_ITT.do"
    do "code/02_Reg_PSM.do"
-   do "code/03_Reg_IV.do"
 ```
 5. Outputs (figures and tables) will be written to `figures/`.
 
@@ -52,7 +51,6 @@ File: data/data.dta
 |---|---|---|
 | Figure 1 | `01_Reg_ITT.do` | `figures/figure1_reg.xls` `figures/figure1_reg.txt`|
 | Figure 1 | `02_Reg_PSM` | `figures/figure1_psm.xls` `figures/figure1_psm.txt`|
-| Figure 2 | `03_Reg_IV.do` | `figures/figure1.png` |
 
 ## License
 Code is released under the MIT License.
