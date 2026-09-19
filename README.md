@@ -11,8 +11,10 @@ This repository contains the code and a synthetic dataset to support verificatio
 ├── code/
 │   ├── 01_Reg_ITT.do       # Main analysis (ITT estimation in Figure 1)
 │   └── 02_Reg_PSM.do       # Main analysis (PSM estimation in Figure 1)
+│   └── 03_Instrumental_forest.R  # Machine learning analysis (ACLATE estimation in Figure 2)
 ├── data/
-│   └── data.dta            # Synthetic dataset (see Data section below)
+│   ├── data.dta            # Synthetic dataset for ITT and PSM (see Data section below)
+│   └── data_grf.dta        # Synthetic dataset for machine learning (see Data section below)
 ├── figures/                # Generated figures and tables
 ├── LICENSE
 └── README.md
