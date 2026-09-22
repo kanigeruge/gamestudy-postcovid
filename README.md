@@ -59,7 +59,7 @@ All file paths in the `.do` files are written relative to `$work` (e.g., `use "$
 2. Before running the script, replace every occurrence of `"C:/path/to/this/repository"` in the file paths (`file_path_import`, `file_path_export`, and the log file path near the top of the script) with the full path of this repository on your machine.
 By default the script estimates ACLATE for the K6 outcome (`Y <- as.vector(dataset$k6)`) with PS5 possession as the endogenous variable (`W <- as.vector(dataset$have_ps5)`), and exports the result to `figures/aclate_k6_haveps5.dta`.
    - To estimate ACLATE for the SWLS outcome instead, uncomment `Y <- as.vector(dataset$swls)` and `file_path_export <- ".../aclate_swls_haveps5.dta"` (and comment out the corresponding K6 lines).
-   - You can also change the endogenous variable `W`. To estimate ACLATE for past-month PS5 play instead of PS5 possession, uncomment `W <- as.vector(dataset$play1m_ps5)` and set `file_path_export <- ".../aclate_swls_play1m.dta"`. To estimate ACLATE for an extra hour of daily video game play instead, uncomment `W <- as.vector(dataset$averageplaytime)` and set `file_path_export <- ".../aclate_swls_playtime.dta"`.
+   - You can also change the endogenous variable `W`. To estimate ACLATE for past-month PS5 play instead of PS5 possession, uncomment `W <- as.vector(dataset$play1m_ps5)` and set `file_path_export <- ".../aclate_swls_play1m.dta"`. To estimate ACLATE for an extra hour of daily video game play instead, uncomment `W <- as.vector(dataset$averageplaytime1)` and set `file_path_export <- ".../aclate_swls_playtime.dta"`.
 4. Run the script:
 ```r
    source("code/03_Instrumental_forest.R")
