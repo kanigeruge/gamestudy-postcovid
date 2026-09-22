@@ -75,7 +75,7 @@ By default the script estimates ACLATE for the K6 outcome (`Y <- as.vector(datas
 |---|---|---|
 | Figure 1 | `01_Reg_ITT.do` | `figures/figure1_reg.xls` `figures/figure1_reg.txt`|
 | Figure 1 | `02_Reg_PSM` | `figures/figure1_psm.xls` `figures/figure1_psm.txt`|
-| Figure 2 | `03_Instrumental_forest.R` | `figures/aclate_k6.dta` (K6 outcome), `figures/aclate_swls.dta` (SWLS outcome) |
+| Figure 2 | `03_Instrumental_forest.R` | `figures/aclate_k6_haveps5.dta` (K6 outcome), `figures/aclate_swls_haveps5.dta` (SWLS outcome) |
 
 ## License
 Code is released under the MIT License.
