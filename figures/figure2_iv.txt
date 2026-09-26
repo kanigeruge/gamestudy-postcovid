@@ -1,0 +1,24 @@
+		(1)	(2)	(3)	(4)	(5)	(6)
+VARIABLES	LABELS	k6	k6	k6	happiness	happiness	happiness
+							
+have_ps5	have_ps5	.0151			.601		
+		(.846)			(.747)		
+play1m_ps5	play1m_ps5		.0309			1.23	
+			(1.73)			(1.54)	
+averageplaytime1	averageplaytime1			-.214			-8.52
+				(12.1)			(28.7)
+							
+Observations		6,911	6,911	6,911	6,911	6,911	6,911
+Controls		Yes	Yes	Yes	Yes	Yes	Yes
+Prefecture FE		Yes	Yes	Yes	Yes	Yes	Yes
+Mean		7.149	7.149	7.149	17.258	17.258	17.258
+SD		6.638	6.638	6.638	6.545	6.545	6.545
+Coef		.015071	.030876	-.213763	.600642	1.230485	-8.519091
+SE		.846024	1.733769	12.133176	.74705	1.539794	28.706351
+Standardized Coef		.0023	.0047	-.0322	.0918	.188	-1.3016
+Standardized SE		.1275	.2612	1.8278	.1141	.2353	4.386
+P-value		.985864	.985869	.98602	.425522	.428326	.76798
+Stars		empty	empty	empty	empty	empty	empty
+Low		-.253975	-.5203119999999999	-3.706078	-.137541	-.284953	-10.11746
+Hi		.258575	.529712	3.641678	.321141	.6609529999999999	7.514259999999998
+Kleibergen-Paap rk Wald F statistic		501.1	121.3	0.132	501.1	121.3	0.132
