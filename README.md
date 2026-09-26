@@ -11,7 +11,8 @@ This repository contains the code and synthetic datasets to support verification
 ├── code/
 │   ├── 01_Reg_ITT.do       # Main analysis (ITT estimation in Figure 1)
 │   └── 02_Reg_PSM.do       # Main analysis (PSM estimation in Figure 1)
-│   └── 03_Instrumental_forest.R  # Machine learning analysis (ACLATE estimation in Figure 2)
+│   └── 03_Reg_IV.do        # IV approach (IV estimation in Figure 2)
+│   └── 04_Instrumental_forest.R  # Machine learning analysis (ACLATE estimation in Figure 2)
 ├── data/
 │   ├── data.dta            # Synthetic dataset for ITT and PSM (see Data section below)
 │   └── data_grf.dta        # Synthetic dataset for machine learning (see Data section below)
@@ -35,7 +36,7 @@ This repository contains the code and synthetic datasets to support verification
 ```
 
 ## How to run
-### Stata (`01_Reg_ITT.do`, `02_Reg_PSM.do`)
+### Stata (`01_Reg_ITT.do`, `02_Reg_PSM.do`, `03_Reg_IV.do`)
 All commands below assume your working directory is the repository root
 (i.e., the folder created by `git clone`, containing `code/`, `data/`, etc.)
 
@@ -51,10 +52,11 @@ All file paths in the `.do` files are written relative to `$work` (e.g., `use "$
 ```
    do "code/01_Reg_ITT.do"
    do "code/02_Reg_PSM.do"
+   do "code/03_Reg_IV.do"
 ```
 5. Outputs (figures and tables) will be written to `figures/`.
 
-### R (`03_Instrumental_forest.R`)
+### R (`04_Instrumental_forest.R`)
 1. Install the required packages listed above.
 2. Before running the script, replace every occurrence of `"C:/path/to/this/repository"` in the file paths (`file_path_import`, `file_path_export`, and the log file path near the top of the script) with the full path of this repository on your machine.
 By default the script estimates ACLATE for the K6 outcome (`Y <- as.vector(dataset$k6)`) with PS5 possession as the endogenous variable (`W <- as.vector(dataset$have_ps5)`), and exports the result to `figures/aclate_k6_haveps5.dta`.
@@ -62,7 +64,7 @@ By default the script estimates ACLATE for the K6 outcome (`Y <- as.vector(datas
    - You can also change the endogenous variable `W`. To estimate ACLATE for past-month PS5 play instead of PS5 possession, uncomment `W <- as.vector(dataset$play1m_ps5)` and set `file_path_export <- ".../aclate_swls_play1m.dta"`. To estimate ACLATE for an extra hour of daily video game play instead, uncomment `W <- as.vector(dataset$averageplaytime1)` and set `file_path_export <- ".../aclate_swls_playtime.dta"`.
 4. Run the script:
 ```r
-   source("code/03_Instrumental_forest.R")
+   source("code/04_Instrumental_forest.R")
 ```
 5. A run log is written to `figures/log_<timestamp>.txt`, and the ACLATE estimates (10 iterations with different random seeds) are written to `figures/aclate_k6_haveps5.dta` (or the corresponding output file for the outcome/endogenous variable combination you selected). Note that the paper reports the estimate from the first iteration.
 
@@ -75,7 +77,8 @@ By default the script estimates ACLATE for the K6 outcome (`Y <- as.vector(datas
 |---|---|---|
 | Figure 1 | `01_Reg_ITT.do` | `figures/figure1_reg.xls` `figures/figure1_reg.txt`|
 | Figure 1 | `02_Reg_PSM` | `figures/figure1_psm.xls` `figures/figure1_psm.txt`|
-| Figure 2 | `03_Instrumental_forest.R` | `figures/aclate_k6_haveps5.dta` (K6 outcome), `figures/aclate_swls_haveps5.dta` (SWLS outcome) |
+| Figure 2 | `03_Reg_IV` | `figures/figure2_iv.xls` `figures/figure2_iv.txt`|
+| Figure 2 | `04_Instrumental_forest.R` | `figures/aclate_k6_haveps5.dta` (K6 outcome), `figures/aclate_swls_haveps5.dta` (SWLS outcome) |
 
 ## License
 Code is released under the MIT License.
